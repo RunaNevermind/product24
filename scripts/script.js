@@ -44,7 +44,6 @@ window.onload = function(){
 
             coordXpercent= coordX / paralaxWidth * 100;
             coordYpercent= coordY / paralaxHeight * 100;
-            console.log(coordXpercent , coordYpercent)
         })
     }
 
