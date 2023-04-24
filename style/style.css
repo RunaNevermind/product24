@@ -2,12 +2,16 @@
     font-family: 'Roboto', sans-serif;
     color: #2E3A59;
 
-
 }
+
+*::-webkit-scrollbar {
+    width: 0;
+  }
 
 .container{
     position: relative;
 }
+
 
 .paralax__balls{
     width: 30vw;
@@ -27,6 +31,7 @@
 }
 
 .container__main{
+    margin-bottom: 60px;
     padding-top: 7px;
     background: linear-gradient(111.04deg, #E2E2E2 0.39%, rgba(255, 255, 255, 0) 86.46%);
 }
@@ -189,6 +194,10 @@ html{
 */
 
 
+.slider__part{
+    padding-top: 40opx;
+}
+
 .slider__part__img{
     width: 27%;
     margin: 0 auto;
@@ -267,7 +276,7 @@ html{
 }
 
 .content__plus__head__line{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .content__plus__head__title{
@@ -520,6 +529,7 @@ html{
 
     .container__main{
         display: block;
+
     }
 
     .container__main__table__img{
@@ -572,17 +582,7 @@ html{
         display: block;
     }
 
-    .container__main__table{
-        display: block;
-    }
 
-    .bx-wrapper{
-        display: none;
-    }
-
-    .container__main__img{
-        display: none;
-    }
 
     .container__main__table {
         width: 33.5em;
@@ -721,13 +721,27 @@ html{
 }
 
 @media (min-width:600px){
+
+    .container__main__table{
+        display: block;
+    }
+
+    .bx-wrapper{
+        display: none;
+    }
+
+    .container__main__img{
+        display: none;
+    }
+
     .header{
         height: 160px;
     }
 
     .header__button{
         float: right;
-        margin-top: 32px;
+        margin-top: 55px;
+        margin-right: 50px;
     }
 
     .header__logo{
@@ -738,6 +752,12 @@ html{
 
     .header__navigation{
         margin-bottom: 25px;
+    }
+
+    .container__main{
+        margin-bottom: 0px;
+        padding-bottom: 60px;
+
     }
 
     .container__main__table{
@@ -789,7 +809,20 @@ html{
     .content__plus,.content__review__content{
     }    
 
+    .header__button{
+        margin-top: 10px;
+    }
+    
 
+}
+
+@media (min-width:813px){
+
+
+    .header__button{
+        margin-top: 55px;
+        margin-right: 50px;
+    }
 
 }
 
@@ -811,7 +844,7 @@ html{
     }
     
     .balls__left{
-        bottom: 50%;
+        bottom: 60%;
         left: 1vw;
     }
     
@@ -1030,13 +1063,7 @@ html{
 
 
 @media (min-width:1010px){
-    .content__plus__list{
-        margin: 0px 30px 0 30px;
-    }
 
-    .container__content{
-        height: 800px;
-    }
 }
 
 @media (min-width:1250px){
